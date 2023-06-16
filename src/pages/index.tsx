@@ -27,7 +27,7 @@ export default function Home() {
           <br />
           <h1 className={`font-bold italic text-[#404565] text-2xl ${cormo.className} underline underline-offset-8`}>Education</h1>
           <br />
-          <div className="flex justify-between">
+          <div className="flex flex-col justify-between md:flex-row">
             <strong>&bull; Ton Duc Thang University</strong>
             <strong>Aug 20 - Now</strong>
           </div>
@@ -36,13 +36,13 @@ export default function Home() {
           <br />
           <h1 className={`font-bold italic text-[#404565] text-2xl ${cormo.className} underline underline-offset-8`}>Work Experiences</h1>
           <br />
-          <div className="flex justify-between">
+          <div className="flex flex-col justify-between md:flex-row">
             <strong>&bull; Five Star Education</strong>
             <strong>Aug 22 - Apr 23</strong>
           </div>
           <p>Administrative Coordinator (part-time)</p>
 
-          <div className="flex justify-between mt-6">
+          <div className="flex flex-col justify-between md:flex-row mt-6">
             <strong>&bull; Balan Coffee Roastery</strong>
             <strong>Jun 23 - Now</strong>
           </div>
@@ -67,14 +67,6 @@ export default function Home() {
                 <path d="M3 7l9 6l9 -6"></path>
               </svg>
               <p>ledinhkhoimd@gmail.com</p>
-            </div>
-            <div className="flex gap-4">
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-              </svg>
-              <p>71 De Tham, Co Giang, district 1. Ho Chi Minh city</p>
             </div>
           </div>
         </div>
