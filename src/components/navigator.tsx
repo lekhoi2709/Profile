@@ -1,18 +1,26 @@
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Toggle } from "@radix-ui/react-toggle"
 import { Sun, Moon } from "lucide-react"
 
 export default function Navigator() {
-  const [isDark, setDark] = useState(false)
+  const [theme, setTheme] = useState<string>()
 
-  const changeTheme = () => {
-    setDark(!isDark)
-    if (isDark) {
+  useEffect(() => {
+    if (localStorage.getItem("theme") === "dark" || (!("theme" in localStorage)) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add("dark")
     } else {
       document.documentElement.classList.remove("dark")
     }
+  }, [theme])
+
+  const changeTheme = () => {
+    if (theme == "dark") {
+      setTheme("light")
+    } else {
+      setTheme("dark")
+    }
+    localStorage.setItem("theme", theme!)
   }
 
   return (
@@ -23,7 +31,7 @@ export default function Navigator() {
         <Link href="/source" scroll={false}>Source</Link>
       </div>
       <Toggle onClick={changeTheme} className="object-cover p-2 dark:text-[#404565] dark:bg-[#dcdaca] rounded-md bg-[#404565] text-[#dcdaca]">
-        {isDark ? <Moon /> : <Sun />}
+        {theme == "dark" ? <Moon /> : <Sun />}
       </Toggle>
     </nav>
   )
