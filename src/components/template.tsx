@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
-import Navigator from '@/components/navigator'
-import Footer from '@/components/footer'
+import Navigator from './navigator'
+import Footer from './footer'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Sawarabi_Mincho } from "next/font/google"
 
