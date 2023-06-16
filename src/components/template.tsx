@@ -28,7 +28,7 @@ export default function Template({ children, page }: { children: ReactNode, page
           animate="enter"
           exit="exit"
           transition={{ type: "linear", delay: 0.2 }}
-          className={`${sawarabi.className} min-h-screen max-w-screen overflow-hidden bg-[#dcdaca] text-[#545445]`}>
+          className={`${sawarabi.className} min-h-screen max-w-screen overflow-hidden bg-[#dcdaca] dark:bg-[#202023] text-[#545445] dark:text-[#e7e7e7]`}>
           {children}
           <Footer />
         </motion.main>
