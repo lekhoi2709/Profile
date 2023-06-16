@@ -22,7 +22,7 @@ export default function Home() {
           <br />
           <h1 className={`font-bold italic text-[#404565] text-2xl ${cormo.className} underline underline-offset-8`}>About me</h1>
           <br />
-          <p>Hello, my name is Le Dinh Khoi - a hardworking student has a huge passion for web development. Enjoy solving front-end problems and creating the best experience for users. I’m always learning new technologies to be a better engineer. </p>
+          <p>Hello, my name is Le Dinh Khoi - a hardworking student has a huge passion for web development. Enjoy solving front-end problems and creating the best experience for users. I am always learning new technologies to be a better engineer. </p>
           <br />
           <br />
           <h1 className={`font-bold italic text-[#404565] text-2xl ${cormo.className} underline underline-offset-8`}>Education</h1>

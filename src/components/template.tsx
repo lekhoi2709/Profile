@@ -7,7 +7,7 @@ import { Sawarabi_Mincho } from "next/font/google"
 
 const sawarabi = Sawarabi_Mincho({ weight: ['400'], subsets: ['latin'] })
 
-function Template({ children, page }: { children: ReactNode, page?: string }) {
+export default function Template({ children, page }: { children: ReactNode, page?: string }) {
 
   const variants = {
     hidden: { opacity: 0, x: -200, y: 0 },
@@ -36,5 +36,3 @@ function Template({ children, page }: { children: ReactNode, page?: string }) {
     </div>
   )
 }
-
-export default Template
