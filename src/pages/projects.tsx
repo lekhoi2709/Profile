@@ -1,4 +1,4 @@
-import Template from "../components/template";
+import Template from "../components/layout";
 
 export default function Projects() {
   return (

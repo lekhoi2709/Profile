@@ -2,7 +2,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <section className="flex justify-center items-center w-full h-16 mt-8 text-sm">
+    <section className="flex justify-center items-center w-full h-24 pt-8 text-sm bg-[#dcdaca] dark:bg-[#202023] text-[#545445] dark:text-[#e7e7e7]">
       <div className="border-t py-4 border-t-black w-[450px] flex justify-center items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
