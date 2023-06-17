@@ -3,7 +3,6 @@ import { Cormorant_Garamond } from "next/font/google"
 import { Github, Mail } from "lucide-react"
 import Template from "@/components/layout"
 import { motion } from "framer-motion"
-import { type } from "os"
 
 const cormo = Cormorant_Garamond({ weight: ['500', '700'], style: ['normal', 'italic'], subsets: ["latin"] })
 

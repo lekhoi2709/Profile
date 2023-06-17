@@ -16,7 +16,7 @@ export default function Template({ children, page }: { children: ReactNode, page
   };
 
   return (
-    <div key={page}>
+    <div key={page} className='bg-[#dcdaca] dark:bg-[#202023] text-[#545445] dark:text-[#e7e7e7]'>
       <Head>
         <title>{page ? page : "Le Dinh Khoi"}</title>
       </Head>
@@ -27,7 +27,7 @@ export default function Template({ children, page }: { children: ReactNode, page
         animate="enter"
         exit="exit"
         transition={{ duration: 0.4, staggerChildren: 0.3 }}
-        className={`${sawarabi.className} min-h-screen max-w-screen overflow-hidden bg-[#dcdaca] dark:bg-[#202023] text-[#545445] dark:text-[#e7e7e7] relative`}>
+        className={`${sawarabi.className} min-h-screen max-w-screen overflow-hidden relative`}>
         {children}
       </motion.article>
       <Footer />
