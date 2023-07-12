@@ -68,11 +68,11 @@ export default function Home() {
             <h1 className={`font-bold italic text-[#404565] dark:text-[#5c8ff9] text-2xl ${cormo.className} underline underline-offset-8`}>Find me on</h1>
             <br />
             <div className="w-full flex flex-col gap-4">
-              <div className="flex gap-4">
+              <a className="text-sky-600 flex gap-4 p-3 hover:bg-sky-400/20 w-fit rounded-md delay-100 duration-200" href="https://github.com/lekhoi2709">
                 <Github />
-                <a className="text-sky-600" href="https://github.com/lekhoi2709">lekhoi2709</a>
-              </div>
-              <div className="flex gap-4">
+                lekhoi2709
+              </a>
+              <div className="flex gap-4 p-3">
                 <Mail />
                 <p>ledinhkhoimd@gmail.com</p>
               </div>
